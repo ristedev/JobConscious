@@ -3,8 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>{{ title }}</title>
+        <link href="https://fonts.googleapis.com/css2?family=PP+Mori&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/style.css">
     </head>
     <body>
+        <nav>
+            {% assign navEntries = collections.all | eleventyNavigation %}
+            {% for entry in navEntries %}
+              {% unless entry.parent %}
+                <a href="{{ entry.url }}">{{ entry.title }}</a>
+              {% endunless %}
+            {% endfor %}
+          </nav>
         {{ content }}
+        {% include "social-cta.md" %}
     </body>
 </html>

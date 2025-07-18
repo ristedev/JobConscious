@@ -1,6 +1,10 @@
+const pluginNavigation = require("@11ty/eleventy-navigation");
+
 module.exports = function(eleventyConfig) {
 
-  // eleventyConfig.addPassthroughCopy({'static':'.'});
+  eleventyConfig.addPlugin(pluginNavigation);
+  
+  eleventyConfig.addPassthroughCopy('assets');
 
   return {
     templateFormats: ['liquid', 'md', 'html'],
