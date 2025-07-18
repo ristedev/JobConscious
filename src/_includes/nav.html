@@ -1,0 +1,13 @@
+<nav>
+  <div class="nav-container">
+    <a href="/" class="brand">
+      JobConscious
+    </a>
+    <div class="nav-links">
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+    </div>
+    <div class="nav-cta">
+      <a href="/book" class="btn-pill">Book Now</a>
+    </div>
+  </div>
+</nav>

@@ -4,9 +4,7 @@ title: Communications
 tags: career
 ---
 
-# JobConscious
-
-## {{ title }}
+<section class="section">
 
 ![Communications Image](img/image-01.jpg)
 
@@ -77,3 +75,4 @@ With a focus on a corporation’s organizational needs, communications majors in
 Communications majors in business and industry study how to write and speak clearly, develop and deliver formal presentations, improve teamwork and morale, and examine the psychological implications of communicating effectively with management teams and the greater workforce.
 
 *Credit to [Communications-Major](https://www.communications-major.com/) for this information*
+</section>

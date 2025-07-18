@@ -1,32 +1,189 @@
 body {
+  padding: 0;
+  margin: 0;
   font-family: 'PP Mori', sans-serif;
 }
 
-nav {
-  text-align: center;
-  margin: 20px 0;
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-nav a {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #000;
+h1 { font-size: 3.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.5rem; }
+h4 { font-size: 2rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.35rem; }
+
+p {
+  font-size: 1.25rem;
+  letter-spacing: -.025rem;
+  line-height: 1.2;
+}
+
+span {
+  font-size: 1.15rem;
+}
+
+/* global links underline effect */
+a {
   position: relative;
-  padding-bottom: 4px;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 0.25rem;
 }
 
-nav a::after {
+a::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px;
+  height: 0.125rem;
   width: 0;
-  background: #007aff;
+  background-color: #0a6eff;
   transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+a:hover::after,
+a:focus::after {
   width: 100%;
+}
+
+/* exclude pill buttons from underline */
+a.btn-pill::after {
+  content: none;
+}
+
+nav {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: #fff;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+.brand {
+  font-size: 1.75rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.brand-logo {
+  width: 2.5rem;
+  height: auto;
+  vertical-align: bottom;
+  object-fit: contain;
+}
+
+.nav-links {
+  margin: 0 auto;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+nav a {
+  color: #000;
+}
+
+.nav-cta {
+  margin-left: 1.5rem;
+}
+
+.btn-pill,
+.btn-pill-dark {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  color: #fff;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-pill {
+  background-color: #0a6eff;
+}
+
+.btn-pill:hover,
+.btn-pill:focus {
+  background-color: #000;
+}
+
+.btn-pill-dark {
+  background-color: #000;
+}
+
+.btn-pill-dark:hover,
+.btn-pill-dark:focus {
+  background-color: #0a6eff;
+}
+
+main {
+  padding: 0 2.5rem;
+}
+
+hr {
+  margin-bottom: 1rem;
+  height: .6px;
+  background-color: #000;
+  border: none;
+}
+
+.headline {
+  max-width: 55rem;
+}
+
+.hero-description {
+  max-width: 40rem;
+  margin: 6rem 0 0 auto;
+}
+
+.section {
+  padding: 1.5rem 0;
+}
+
+.section-content {
+  padding: 2.5rem 0;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.footer-socials {
+  margin-bottom: 0.75rem;
+}
+
+.footer-socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.875rem;
 }

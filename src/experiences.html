@@ -1,0 +1,35 @@
+---
+layout: default
+title: Experiences
+eleventyNavigation:
+  key: Experiences
+permalink: /experiences/
+---
+
+<section class="section">
+  <h1 class='headline'>Discover real stories from real people</h1>
+</section>
+
+<!-- <div id="filter-buttons">
+  <a data-topic="All" class="btn-pill active">All</a>
+  {% assign topics = [] %}
+  {% for item in experiences.experiences %}
+    {% unless topics contains item.topic %}
+      {% assign topics = topics | push: item.topic %}
+    {% endunless %}
+  {% endfor %}
+  {% for topic in topics %}
+    <a data-topic="{{ topic }}" class="btn-pill">{{ topic }}</a>
+  {% endfor %}
+</div> -->
+
+<section class="section" id="experiences">
+  {% for item in experiences.experiences %}
+  <section>
+    <h2>{{ item.topic }}: {{ item.name }}</h2>
+    <a href="{{ item.embedUrl }}"><img src="{{ item.thumbnail }}" alt="Watch {{ item.name }} on YouTube"></a>
+    <p>{{ item.description }}</p>
+    <a href="{{ item.learnMoreUrl }}">Learn More →</a>
+  </section>
+  {% endfor %}
+</section>

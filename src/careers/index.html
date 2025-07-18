@@ -1,0 +1,17 @@
+---
+layout: default
+title: Careers
+eleventyNavigation:
+  key: Careers
+permalink: /careers/
+---
+
+<section class="section" id="careers">
+  <ul>
+    {% for career in collections.career %}
+    <li>
+      <a href="{{ career.url }}">{{ career.data.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
