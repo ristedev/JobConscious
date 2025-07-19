@@ -116,6 +116,10 @@ main {
   vertical-align: middle;
 }
 
+a.brand::after {
+  content: none;
+}
+
 .brand-logo {
   width: 2.5rem;
   height: auto;
