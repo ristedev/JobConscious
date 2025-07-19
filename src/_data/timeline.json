@@ -1,17 +1,31 @@
 [
   {
-    "title": "JobConscious Website Redesign",
-    "date": "Jul 2025",
-    "description": "Launched the first stable version with core features."
+    "title": "University Pitch Meeting",
+    "date": "Jul 2019",
+    "description": "The JobConscious team met with Montclair State University administrators to pitch the platform’s concept and explore institutional support"
   },
   {
-    "title": "Final Pitch Presented at MSU Contest",
+    "title": "JobConscious gets formally pitched",
     "date": "May 2019",
-    "description": "JobConscious was formally pitched at the final round of Montclair State University’s 2019 Pitch Contest, showcasing the business model and vision to a panel of judges."
-  },  
+    "description": "Delivered a formal pitch in the final round of the 2019 Montclair State University Pitch Contest, presenting the business model and vision to a panel of judges"
+  },
   {
-    "title": "Passed Preliminary Round of Pitch Contest",
+    "title": "JobConscious advances to Semi-Finals of Montclair State University Pitch Contest",
+    "date": "Apr 2019",
+    "description": "JobConscious is selected as a semi-finalist in the 2019 Montclair State University Pitch Contest after advancing through the preliminary round"
+  },
+  {
+    "title": "JobConscious is featured in The Montclarion",
     "date": "Mar 2019",
-    "description": "JobConscious advanced in Montclair State University’s 2019 Pitch Contest during the preliminary round."
+    "description": "The Montclarion published a feature article highlighting JobConscious, detailing its mission and early progress"
+  },
+  {
+    "title": "Website Launch",
+    "date": "Feb 2019",
+    "description": "Launched website v1.0, successfully gathering over 300 student email signups expressing early interest in the platform"
+  },
+  {
+    "title": "JobConscious is born at a Starbucks cafe",
+    "date": "Jan 2019"
   }
 ]
