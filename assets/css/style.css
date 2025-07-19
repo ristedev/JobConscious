@@ -172,14 +172,6 @@ hr {
 
 .section {
   padding: 1.5rem 0;
-  opacity: 0;
-  transform: translateY(80px);
-  transition: opacity 1.2s ease-out, transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.section.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .section-content {
@@ -256,6 +248,17 @@ hr {
   border: none;
   cursor: pointer;
   color: #000;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 1.2s ease-out, transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {

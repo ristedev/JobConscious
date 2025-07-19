@@ -1,30 +1,28 @@
-const sections = document.querySelectorAll('.section');
+const fadeIns = document.querySelectorAll('.fade-in');
 
 const observer = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target); // animate only once
+        observer.unobserve(entry.target);
       }
     });
   },
   {
     threshold: 0.1,
-    rootMargin: '0px 0px -30% 0px', // trigger only when 30% from bottom of viewport
+    rootMargin: '0px 0px -25% 0px',
   },
 );
 
-// observe all sections
-sections.forEach((section) => observer.observe(section));
+fadeIns.forEach((el) => observer.observe(el));
 
-// immediately show any sections already visible on page load
 window.addEventListener('load', () => {
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
+  fadeIns.forEach((el) => {
+    const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom >= 0) {
-      section.classList.add('visible');
-      observer.unobserve(section);
+      el.classList.add('visible');
+      observer.unobserve(el);
     }
   });
 });
